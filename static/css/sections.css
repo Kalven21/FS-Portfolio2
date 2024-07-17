@@ -1,0 +1,31 @@
+.about-img-container {
+    width: 30%;
+}
+.about-img-container img {
+    width: 60%;
+}
+.about-des-container {
+    width: 70%;
+    padding: 2%;
+}
+.about-des-container p {
+    margin: 1rem 0px;
+    width: 80%;
+}
+
+.skill-list {
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 70%;
+    margin-top: 1rem;
+}
+
+.projects-list {
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3%;
+}
+.projects-list img {
+    width: 100%;
+}

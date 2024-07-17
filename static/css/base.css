@@ -1,0 +1,104 @@
+:root {
+    --primamry-color: #EBC050;
+    --primary-color-100: #FAEED1;
+    --primary-color-200: #F5DEA3;
+    --primary-color-300: #EFCD76;
+    --primary-color-400: #EABC48;
+    --primary-color-600: #B78915;
+    --primary-color-700: #896710;
+    --primary-color-800: #5C450A;
+    --primary-color-900: #2E2205;
+
+    --secondary-color: #296F17;
+    --secondary-color-100: #DBF6D5;
+    --secondary-color-200: #B8EEAA;
+    --secondary-color-300: #94E580;
+    --secondary-color-400: #71DC56;
+    --secondary-color-600: #3EA923;
+    --secondary-color-700: #2E7F1A;
+    --secondary-color-800: #1F5511;
+
+    --third-color: #F1F1F1;
+    --third-color-100: #E6E6E6; 
+    --third-color-200: #CCCCCC; 
+    --third-color-400: #999999; 
+    --third-color-600: #666666;
+    --third-color-800: #333333; 
+
+    --neutral-color: #aaaaaa;
+
+    --background-color: #aaaaaa;
+
+    --surface-color: #aaaaaa;
+
+    --a-font: "Playwrite GB S", cursive;
+    --b-font: "Inconsolata", monospace;
+    --c-font: "Playwrite IT Moderna", cursive;
+}
+
+html {
+    background-color: var(--third-color);
+    font-size: 20px;
+}
+* {
+    font-family: var(--b-font);
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*TEXT*/
+h1 {
+    color: var(--primamry-color);
+    font-family: var(--a-font);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h2 {
+    color: var(--secondary-color-600);
+    font-size: 3.7rem;
+}
+
+p {
+    color: var(--third-color-800);
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+}
+
+/*Classes*/
+.center-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-label {
+    color: var(--primary-color-600);
+    background-color: var(--third-color-200);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.all-projects {
+    width: 98%;
+    justify-content: space-around;
+}
+.skill-list {
+    justify-content: space-around;
+}
+.skill-list label {
+    background-color: var(--third-color-200);
+    padding: .3rem .8rem;
+}

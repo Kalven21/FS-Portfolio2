@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} About Me {% endblock title %}
+
+{% block content %}
+    <h2>About me Section </h2>
+    <section class="about-section center-row">
+
+        <div class="center-row about-img-container">
+            <img src="{% static './img/Foto.jpeg' %}">
+        </div>
+
+        <div class="center-column about-des-container">
+            <h1>My Rol as Developer | Professional</h1>
+            <h2>My name is Kevin</h2>
+            <p>Hi, I am Kevin, I'm 20 years old. I live in Tijuana. Currently studying Digital Graphic Design, also a intensive course called FullStack, with is of programing. I like to play video games, basketboll and the guitar, draw and wacth movies.</p>
+            <div class="center-column skills-container">
+                
+                <h2>Skills</h2>
+                
+                <div class="skill-list center-row">
+                    <label class="skills-label">Figma</label>
+                    <label class="skills-label">Responsive Design</label>
+                    <label class="skills-label">HTML</label>
+                    <label class="skills-label">CSS</label>
+                    <label class="skills-label">PYTHON</label>
+                    <label class="skills-label">JAVA</label>
+                    <label class="skills-label">DJANGO</label>
+                    <label class="skills-label">Web designs</label>
+                    <label class="skills-label">JQUERY</label>
+                    <label class="skills-label">React</label>
+                </div>
+            </div>
+        </div>
+
+    </section>
+{% endblock content %}

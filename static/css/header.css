@@ -1,0 +1,39 @@
+/*Header*/
+header {
+    display: flex;
+    height: 60px;
+    position: sticky;
+    background-color: var(--secondary-color-100);
+}
+
+header h1{
+    font-size: 1.1rem;
+    color: var(--primary-color-600);
+}
+
+.logo {
+    width: 25%;
+}
+
+.nav-option {
+    width: 100%;
+    height: 100%;
+}
+.nav-menu {
+    justify-content: space-around;
+    width: 80%;
+}
+
+.nav-menu a {
+    color: var(--secondary-color-800);
+    font-size: 1.4rem;
+    padding: 1.5;
+}
+
+.nav-menu a:hover {
+    border-bottom: solid 2px var(--primary-color-600);
+}
+
+#checkBox, .hamburger-btn {
+    display: none;
+}

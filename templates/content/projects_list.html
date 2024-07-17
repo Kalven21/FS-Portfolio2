@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} Project list {% endblock title %}
+{% load static %}
+
+{% block content %}
+<section class="projects-section center-column">
+    <h2>Projects</h2>
+    <div class="center-row all-projects">
+
+        {% for project in projects %}
+        <div class="projects-list">
+            <a href="{{ project.repository }}" target="_blank">
+                <img src="{{ project.image }}">
+                <p>{{ project.name }}</p>
+            </a>
+            <p>{{ project.description }}</p>
+            <p>{{ project.year }}</p>
+            
+            <div class="skill-list center-row">
+                {% for skill in project.skill.all %}
+                <label class="label-text">{{ skill.name }}</label>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>        
+</section>
+
+{% endblock content %}

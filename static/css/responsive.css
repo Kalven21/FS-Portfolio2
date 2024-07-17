@@ -1,0 +1,84 @@
+/*Medium Screen*/
+@media((min-width:641px) and (max-width:1007px)){
+    /*TEXT*/
+    html {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2.7rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+/*Small view*/
+@media(max-width:640px){
+    /*TEXT*/
+    html {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    header {
+        flex-direction: column;
+        height: min-content;
+        padding: 2%;
+    }
+    .nav-option {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 30%;
+    }
+    .hamburger-btn {
+        display: inline-flex;
+    }
+    .hamburger-btn span {
+        display: block;
+        background-color: var(--neutral-color);
+        height: 5px;
+        width: 50px;
+        margin: 6px auto;
+    }
+
+    /*Toggle function*/
+    #checkBox:not(:checked) ~ .nav-menu {
+        height: 0px;
+        overflow: hidden;
+    }
+    
+    #checkBox:checked ~ .nav-menu {
+        height: auto;
+        overflow: visible;
+    }
+
+    /*Description*/
+    section {
+        flex-direction: column;
+    }
+    .about-des-container {
+        width: 85%;
+    }
+    .skill-list {
+        width: 95%;
+    }
+
+    .center-row { 
+        flex-direction: column;
+    }
+}
