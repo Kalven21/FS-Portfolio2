@@ -1,5 +1,28 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import ContactForm
+from django.core.mail import send_mail
 
 # Create your views here.
 def about_view(request):
     return render(request, 'pages/about.html')
+
+def contact_page(request):
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        
+        if form.is_valid():
+            #send email
+            name = form.cleaned_data['name']
+            email_from = form.cleaned_data['email']
+            message = form.cleaned_data['message']
+            
+            send_mail("Email from " + name, message, email_from, ['zamorakevin21@gmail.com'])
+            
+            return redirect('about')
+            
+        else: 
+            print("Invalid form")
+    else:
+        form = ContactForm()
+        
+    return render(request, 'pages/contact.html', {'form': form})

@@ -102,3 +102,37 @@ p {
     background-color: var(--third-color-200);
     padding: .3rem .8rem;
 }
+
+/*---- Contact Section ----*/
+.contact-section { 
+    margin-top: 1rem;
+}
+
+.contact-section h2 {
+    display: block;
+    text-align: center;
+}
+
+.contactForm{
+    background-color: var(--primary-color-200);
+    padding: 2rem;
+    margin: 1rem;
+    border: solid 2px var(--primary-color-700);
+}
+
+.contactForm input{
+    padding: .4rem;
+    margin: 1rem;
+    width: 16rem;
+}
+
+.primary-button{
+    padding: .5rem;
+    margin: 1rem;
+    background-color: var(--secondary-color-400);
+    border-radius: 8px;
+    border: solid 2px var(--secondary-color-800);
+}
+.primary-button :hover{
+    background-color: var(--secondary-color-700);
+}
